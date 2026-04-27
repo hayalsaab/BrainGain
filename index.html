@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Gain | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Brain Gain</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About Us</a>
+        <a href="challenges.html" data-nav="challenges">Daily Challenge</a>
+        <a href="contact.html" data-nav="contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Brain Gain</h1>
+        <p class="hero-text">
+          A simple, energetic space that gives you fresh daily challenges and helps you turn small actions into real progress.
+        </p>
+        <p class="eyebrow">New day, new energy.</p>
+
+        <div class="hero-actions">
+          <a href="challenges.html" class="btn primary-btn">Start Today</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sample-title">
+      <div class="container">
+        <div class="section-head center">
+          <h2 id="sample-title">Today's Sample Challenges</h2>
+          <p>Three simple picks. One strong start.</p>
+        </div>
+
+        <div class="sample-grid">
+          <article class="card challenge-preview">
+            <div class="icon">📚</div>
+            <h3>Read for 20 minutes</h3>
+            <span class="tag blue-tag">Learning</span>
+          </article>
+
+          <article class="card challenge-preview">
+            <div class="icon">🚶</div>
+            <h3>Walk 20 minutes</h3>
+            <span class="tag purple-tag">Health</span>
+          </article>
+
+          <article class="card challenge-preview">
+            <div class="icon">💧</div>
+            <h3>Drink more water</h3>
+            <span class="tag pink-tag">Wellness</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft winners-section">
+      <div class="container">
+        <div class="section-head center">
+          <h2>Today's Winners 🏆</h2>
+          <p>See the top three places and your current rank for today.</p>
+          <p id="winnerCountdown">Loading reset timer...</p>
+        </div>
+
+        <div class="winners-grid">
+          <article class="card winners-card">
+            <h3>Top 3</h3>
+            <div id="leaderboardList">Loading winners...</div>
+          </article>
+
+          <article class="card rank-card">
+            <h4>Your Current Rank</h4>
+            <div class="rank-number" id="currentRank">#0</div>
+            <p id="rankNote">Complete today’s challenges to join the ranking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Brain Gain</p>
+      <p>Build better habits, one day at a time</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=10"></script>
+  <script type="module" src="leaderboard.js?v=10"></script>
+
+</body>
+</html>

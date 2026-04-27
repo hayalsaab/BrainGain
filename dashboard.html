@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain Gain | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="dashboard">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Brain Gain</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="challenges.html">Daily Challenge</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Dashboard</h1>
+        <p>View all contact messages and suggestions submitted by users.</p>
+        <p class="eyebrow">📊 Brain Gain Admin Panel</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="stats-grid">
+          <article class="stat-card date-card">
+            <div class="stat-top">
+              <div>
+                <p class="stat-label">Total Messages</p>
+                <h2 class="completed-value" id="totalMessages">0</h2>
+              </div>
+            </div>
+          </article>
+
+          <article class="stat-card completed-card">
+            <div class="stat-top">
+              <div>
+                <p class="stat-label">Male</p>
+                <h2 class="completed-value" id="maleCount">0</h2>
+              </div>
+            </div>
+          </article>
+
+          <article class="stat-card progress-card">
+            <div class="stat-top">
+              <div>
+                <p class="stat-label">Female</p>
+                <h2 class="completed-value" id="femaleCount">0</h2>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="message-box" id="dashboardMessage">
+          Loading data from Firebase...
+        </div>
+
+        <article class="card table-card">
+          <div class="table-title-wrap">
+            <h3>Contact Suggestions</h3>
+          </div>
+
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Gender</th>
+                  <th>Mobile</th>
+                  <th>Date of Birth</th>
+                  <th>Email</th>
+                  <th>Language</th>
+                  <th>Suggestion</th>
+                </tr>
+              </thead>
+              <tbody id="dashboardTableBody">
+                <tr>
+                  <td colspan="8">Loading...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Brain Gain</p>
+      <p>Build better habits, one day at a time</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

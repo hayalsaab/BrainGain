@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Gain | Daily Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="challenges">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Brain Gain</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="navMenu">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About Us</a>
+        <a href="challenges.html" data-nav="challenges">Daily Challenge</a>
+        <a href="contact.html" data-nav="contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Daily Challenge</h1>
+        <p>Each day brings a renewed set of challenges. Start one, finish one, or complete them all.</p>
+        <p class="eyebrow">Pick a challenge and make today count.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container narrow">
+        <div class="stats-grid">
+          <article class="stat-card date-card">
+            <div class="stat-top">
+              <p class="stat-label">Today's Date</p>
+            </div>
+            <div class="date-value" id="todayDateText">Sunday,<br>April 19,<br>2026</div>
+          </article>
+
+          <article class="stat-card completed-card">
+            <div class="stat-top">
+              <p class="stat-label">Completed Today</p>
+            </div>
+            <h3 class="completed-value">
+              <span id="completedCount">0</span><span class="completed-total">/3</span>
+            </h3>           
+            <p class="progress-note" id="completedNote">Not started yet</p>
+          </article>
+
+          <article class="stat-card progress-card">
+            <div class="stat-top">
+              <p class="stat-label">Daily Progress</p>
+            </div>
+              <div class="progress-percent" id="progressPercent">
+                <span class="progress-number">0</span><span class="progress-symbol">%</span>
+              </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-scale"><span>0%</span><span>100%</span></div>
+          </article>
+        </div>
+
+        <div class="message-box" id="messageBox">Ready to start? Pick a challenge and make today count.</div>
+
+       <div class="card name-card">
+  <label for="playerName">Your Name</label>
+
+  <div class="input-wrapper">
+    <span class="input-icon">👤</span>
+    <input type="text" id="playerName" placeholder="Enter your name">
+  </div>
+
+  <p class="input-error" id="nameError">Please enter your name</p>
+</div>
+
+
+        
+        <div class="challenges-list" id="challengeList"></div>
+
+        <div class="card contact-cta-card">
+          <div class="contact-cta-copy">
+            <h3>Have an idea for future challenges?</h3>
+            <p>Send your suggestion through the contact page form.</p>
+          </div>
+          <a href="contact.html" class="btn contact-btn-alt">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Brain Gain</p>
+      <p>Build better habits, one day at a time</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script type="module" src="leaderboard.js"></script>
+
+</body>
+</html>
